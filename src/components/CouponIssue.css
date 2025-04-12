@@ -1,0 +1,128 @@
+.coupon-issue-container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.coupon-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-hint {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.submit-button,
+.refresh-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover,
+.refresh-button:hover {
+  background-color: #45a049;
+}
+
+.submit-button:disabled,
+.refresh-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.refresh-button {
+  background-color: #2196F3;
+  margin-top: 15px;
+}
+
+.refresh-button:hover {
+  background-color: #0b7dda;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+}
+
+.available-coupons {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.coupon-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.coupon-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-id, .coupon-count {
+  font-weight: bold;
+}
+
+.coupon-count {
+  color: #4caf50;
+}
+
+.no-coupons {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+} 
