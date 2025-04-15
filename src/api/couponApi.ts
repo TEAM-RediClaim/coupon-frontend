@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import { 
   IssueCouponRequest, 
   CreateCouponRequest, 
@@ -11,6 +12,11 @@ import {
   RegisterUserResponse,
   RegisterCreatorResponse
 } from '../types';
+
+axios.defaults.baseURL =
+  (window as any).API_HOST ||            // env.js (프로덕션)
+  process.env.REACT_APP_API_BASE ||      // .env (개발)
+  '';                                // fallback
 
 // 에러 처리 헬퍼 함수
 const handleApiError = (error: any): never => {
